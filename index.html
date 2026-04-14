@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouapi Happi Jason | Portfolio</title>
+
+  <!-- Google Fonts: Outfit for headings, Inter for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Mouapi Jason<span class="dot">.</span></div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="mode-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu">
+    <span class="close-menu"><i class="fas fa-times"></i></span>
+    <ul class="mobile-nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="greeting">Hello, I'm</p>
+          <h1>Jason Mouapi</h1>
+          <h2 class="typewriter-text">Software Engineering Student</h2>
+          <p class="description">Passionate about building secure, innovative digital solutions that make an impact.
+            Exploring the intersection of Cybersecurity and Software Engineering.</p>
+
+          <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jason-happi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:jasonhappi10@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+
+          <!-- ✅ VISITOR COUNTER DISPLAY — already existed, no change here -->
+          <p style="font-size:13px; color:#888; margin-top:12px; margin-bottom:0;">
+            👁 This portfolio has been visited
+            <span id="visitorCount" style="font-weight:600; color:#7c6af7;">...</span>
+            times
+          </p>
+
+          <div class="cta-buttons">
+            <a href="#projects" class="btn primary-btn">View My Work</a>
+            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-img-container">
+          <div class="blob"></div>
+          <img src="Jn.jpg" alt="Jason Mouapi" class="profile-img">
+        </div>
+      </div>
+
+      <div class="scroll-down">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <i class="fab fa-cuttlefish"></i>
+          <h3>C++</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-java"></i>
+          <h3>Java</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3>MySQL</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <h2 class="section-title">Latest Projects</h2>
+      <div class="projects-container">
+
+        <div class="project-card">
+          <div class="card-image">
+            <img src="Proj1.png" alt="Quincaillerie Ai">
+            <div class="overlay">
+              <a href="#" class="icon-btn"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="icon-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Quincaillerie Ai</h3>
+            <p>Visualization dashboard using HTML, CSS, and MySQL for monitoring orders and tracking deliveries.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Student Management System">
+            <div class="overlay">
+              <a href="#" class="icon-btn"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="icon-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Student Management</h3>
+            <p>A web app for managing student data and reports — built with HTML, CSS, and PHP.</p>
+            <div class="tags">
+              <span>PHP</span><span>Web Dev</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="AI Chatbot">
+            <div class="overlay">
+              <a href="#" class="icon-btn"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="icon-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>AI Chatbot</h3>
+            <p>Designed a chatbot prototype for a university help desk using basic Python and HTML.</p>
+            <div class="tags">
+              <span>Python</span><span>AI</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-desc">I'm currently looking for new opportunities. Whether you have a question or just want to
+        say hi, I'll try my best to get back to you!</p>
+
+      <form id="contactForm" style="max-width:520px; margin:0 auto 2rem;">
+        <input type="text" id="contactName" placeholder="Your name" required style="
+          display:block; width:100%; padding:12px 16px; margin-bottom:12px;
+          border:1px solid #ddd; border-radius:10px; font-size:15px;
+          font-family:inherit; background:transparent; color:inherit;">
+        <input type="email" id="contactEmail" placeholder="Your email" required style="
+          display:block; width:100%; padding:12px 16px; margin-bottom:12px;
+          border:1px solid #ddd; border-radius:10px; font-size:15px;
+          font-family:inherit; background:transparent; color:inherit;">
+        <textarea id="contactMessage" placeholder="Your message" rows="5" required style="
+          display:block; width:100%; padding:12px 16px; margin-bottom:16px;
+          border:1px solid #ddd; border-radius:10px; font-size:15px;
+          font-family:inherit; background:transparent; color:inherit; resize:vertical;"></textarea>
+        <div class="contact-buttons">
+          <button type="submit" class="btn primary-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <a href="https://www.linkedin.com/in/jason-happi/" target="_blank" class="btn secondary-btn">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+        <p id="formStatus" style="margin-top:16px; font-size:14px; text-align:center;"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mouapi Happi Jason. All Rights Reserved.</p>
+    <div class="footer-socials">
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jason-happi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Contact Form Script -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      const btn = this.querySelector('button[type="submit"]');
+
+      status.textContent = 'Sending...';
+      status.style.color = '#7c6af7';
+      btn.disabled = true;
+
+      const data = {
+        name:    document.getElementById('contactName').value,
+        email:   document.getElementById('contactEmail').value,
+        message: document.getElementById('contactMessage').value
+      };
+
+      try {
+        const res = await fetch('https://wpzcwsh5wh.execute-api.us-east-1.amazonaws.com/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        const result = await res.json();
+        status.textContent = 'Message sent! I will get back to you soon.';
+        status.style.color = 'green';
+        document.getElementById('contactForm').reset();
+      } catch (err) {
+        status.textContent = 'Something went wrong. Please try again.';
+        status.style.color = 'red';
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  </script>
+
+  <!-- ✅ VISITOR COUNTER SCRIPT — replaced old simple fetch with localStorage version -->
+  <!-- First-time visitors increment the count. Returning visitors just see the number. -->
+  <script>
+    const alreadyCounted = localStorage.getItem("visited");
+
+    if (!alreadyCounted) {
+      // First time visitor — increment the count
+      fetch("https://8xmts8pguj.execute-api.us-east-1.amazonaws.com/count")
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("visitorCount").textContent = data.count;
+          localStorage.setItem("visited", "true");
+        })
+        .catch(() => {
+          document.getElementById("visitorCount").textContent = "—";
+        });
+    } else {
+      // Returning visitor — show count without incrementing
+      fetch("https://8xmts8pguj.execute-api.us-east-1.amazonaws.com/count")
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("visitorCount").textContent = data.count;
+        })
+        .catch(() => {
+          document.getElementById("visitorCount").textContent = "—";
+        });
+    }
+  </script>
+
+</body>
+
+</html>
